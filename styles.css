@@ -1,0 +1,110 @@
+:root {
+  --bg: #F7F5FF;
+  --card-bg: #FFFFFF;
+  --primary: #4A2D91;
+  --heading: #372B70;
+  --title: #2B2266;
+  --text: #3A3A55;
+  --muted: #6D6A99;
+  --bullet: #7A4DE6;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+  background-color: var(--bg);
+  color: var(--text);
+  line-height: 1.5;
+}
+
+/* App bar */
+.app-bar {
+  background-color: var(--primary);
+  padding: 16px;
+}
+
+.app-bar-title {
+  color: white;
+  font-weight: 700;
+  font-size: 20px;
+}
+
+/* Page layout */
+.page {
+  padding: 24px 12px;
+  display: flex;
+  justify-content: center;
+}
+
+/* Card */
+.card {
+  max-width: 640px;
+  width: 100%;
+  background: var(--card-bg);
+  border-radius: 24px;
+  padding: 32px 24px 40px;
+  box-shadow: 0 12px 18px rgba(0, 0, 0, 0.05);
+}
+
+/* Typography */
+h1 {
+  margin-top: 0;
+  font-size: 28px;
+  font-weight: 800;
+  color: var(--title);
+}
+
+.updated {
+  margin-top: 4px;
+  color: var(--muted);
+  font-size: 14px;
+  font-weight: 600;
+}
+
+section {
+  margin-top: 32px;
+}
+
+h2 {
+  font-size: 20px;
+  font-weight: 700;
+  color: var(--heading);
+  margin-bottom: 12px;
+}
+
+/* Lists */
+ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+li {
+  display: flex;
+  margin-bottom: 8px;
+}
+
+li::before {
+  content: "";
+  width: 8px;
+  height: 8px;
+  background-color: var(--bullet);
+  border-radius: 50%;
+  margin-top: 8px;
+  margin-right: 12px;
+  flex-shrink: 0;
+}
+
+/* Links */
+a {
+  color: var(--primary);
+  font-weight: 600;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
